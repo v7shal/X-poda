@@ -8,7 +8,7 @@ import org.apache.poi.xwpf.usermodel.XWPFDocument;
 public class ExtractDocx {
     public static void main(String[] args) {
         try {
-            File file = new File("C:\\Users\\HP\\Desktop\\file1.docx");
+            File file = new File("file1.docx");
             FileInputStream fis = new FileInputStream(file.getAbsolutePath());
             XWPFDocument document = new XWPFDocument(fis);
             XWPFWordExtractor extractor = new XWPFWordExtractor(document);

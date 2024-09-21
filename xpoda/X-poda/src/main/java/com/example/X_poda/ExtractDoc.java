@@ -8,7 +8,7 @@ import org.apache.poi.hwpf.extractor.WordExtractor;
 public class ExtractDoc {
     public static void main(String[] args) {
         try {
-            File file = new File("C:\\Users\\HP\\Desktop\\file1.doc");
+            File file = new File("file1.doc");
             FileInputStream fis = new FileInputStream(file.getAbsolutePath());
             HWPFDocument document = new HWPFDocument(fis);
             WordExtractor extractor = new WordExtractor(document);
